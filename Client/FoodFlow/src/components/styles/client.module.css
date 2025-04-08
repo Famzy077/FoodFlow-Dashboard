@@ -1,0 +1,124 @@
+
+.main {
+    width: 95%;
+    margin: auto;
+}
+.cm_button_container {
+    position:relative;
+    display: block;
+    text-align: end;
+    z-index: 3;
+}
+.cm_button {
+    width: 13rem;
+    height: 3rem;
+    text-align: center;
+    background: #FFA902;
+    color: #fff;
+    border-radius: 0.3125rem;
+    margin-bottom: 1rem;
+}
+.card_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_Card {
+    position: relative;
+    border-radius: 0.625rem;
+    border: 1px solid #999;
+    background: #FFA902;
+    padding: 1rem;
+    height: 12rem;
+    width: 32%;
+}
+.card_mainText {
+    margin-top: 1.5rem;
+    color: #FFF;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: normal;
+}
+.card_number {
+    margin-top: 1.9rem;
+    color: #FFF;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: normal;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+.card_detail {
+    margin-top: .8rem;
+    color: #FFF;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: normal;
+}
+/* COPY TAG STYLING */
+.svg {
+    position: absolute;
+    top: o;
+    right: 0;
+    margin-right: 1rem;
+    margin-top: .3rem;
+    cursor: pointer;
+}
+/* SECOND AND THIRD CARDS */
+.cardII_Card {
+    position: relative;
+    border-radius: 0.625rem;
+    border: 1px solid #999;
+    padding: 1rem;
+    height: 12rem;
+    width: 32%;
+}
+.cardII_mainText {
+    margin-top: 1.5rem;
+    color: #000;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: normal;
+}
+.cardII_number {
+    margin-top: 1.9rem;
+    color: #000;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: normal;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+.cardII_detail {
+    margin-top: .8rem;
+    color: #000;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: normal;
+    color: green;
+}
+.cardIII_detail {
+    margin-top: .8rem;
+    color: #000;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: normal;
+    color: red;
+}
+
+.bottom_cm {
+    display: block;
+    text-align: end;
+}
+.bottom_button {
+    width: 13rem;
+    height: 3rem;
+    text-align: center;
+    background: #FFF;
+    color: #FFA902;
+    border-radius: 0.3125rem;
+    margin-bottom: 1rem;
+    margin-top: .7rem;
+    border: 1px solid #FFA902;
+}
+

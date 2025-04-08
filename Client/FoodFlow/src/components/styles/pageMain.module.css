@@ -1,0 +1,69 @@
+.main {
+    /* background-color: blue; */
+}
+.mainComp {
+    scroll-behavior: smooth;
+    height: auto;
+}
+.topBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+.btnCont {
+    width: 90%;
+    height: 3rem;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 40px;
+    border: 1px solid #B1B1B4;
+    background-color: #fff;
+}
+.btnCont > button {
+    text-align: center;
+}
+
+.firstBtn {
+    transition: .3s;
+    background-color: #000000;
+    color: #fff;
+    width: 25%;
+    height: 100%;
+    border-radius: 40px;
+}
+.secondtBtn {
+    transition: .3s;
+    background-color: #000000;
+    color: #fff;
+    width: 25%;
+    height: 100%;
+    border-radius: 40px;
+}
+.thirdBtn {
+    transition: .3s;
+    background-color: #000000;
+    color: #fff;
+    width: 25%;
+    height: 100%;
+    border-radius: 40px;
+}
+.fourthBtn {
+    transition: .3s;
+    background-color: #000000;
+    color: #fff;
+    width: 25%;
+    height: 100%;
+    border-radius: 40px;
+}
+.online {
+    color: #000000;
+    background-color: #fff;
+    transition: .3s;
+    width: 25%;
+    height: 100%;
+    border-radius: 40px;
+}

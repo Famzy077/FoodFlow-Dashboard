@@ -1,0 +1,55 @@
+.main {
+    border-radius: 0.625rem;
+    border: 1px solid #999;
+    background: #FFF;
+    width: 95%;
+    margin: auto;
+}
+.info {
+    border-bottom: 1px solid #999;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 2rem;
+}
+.info_one {
+    color: #4F4F4F;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.info_two {
+    color: #FFA902;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.H_container {
+    display: flex;
+    justify-content: space-around;
+}
+.H_one {
+    margin-top: 6rem;
+}
+.H_oneM {
+    margin-bottom: 1.5rem;
+    color: #4B4B4B;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.H_oneS {
+    color: #4B4B4B;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: normal;
+}
+.H_oneSs {
+    color: #4B4B4B;
+    text-align: center;
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: normal;
+}
