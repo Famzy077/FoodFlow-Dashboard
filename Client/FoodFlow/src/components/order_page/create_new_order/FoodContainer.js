@@ -45,7 +45,7 @@
 
 // //   // Log data for debugging
 // //   useEffect(() => {
-// //     console.log("addMenuItems:", addMenuItems);
+// //     ////console.log("addMenuItems:", addMenuItems);
 // //   }, [addMenuItems]);
 
 // //   // Filter menu items based on selected category
@@ -230,7 +230,7 @@
 
 //   // Log data for debugging
 //   useEffect(() => {
-//     console.log("addMenuItems:", addMenuItems);
+//     //console.log("addMenuItems:", addMenuItems);
 //   }, [addMenuItems]);
 
 //   // Filter menu items based on selected category and search keyword
@@ -396,7 +396,7 @@ export default function FoodContainer() {
 
   // Log data for debugging
   useEffect(() => {
-    console.log("addMenuItems:", addMenuItems);
+    //console.log("addMenuItems:", addMenuItems);
   }, [addMenuItems]);
 
   // Filter menu items based on selected category and search keyword

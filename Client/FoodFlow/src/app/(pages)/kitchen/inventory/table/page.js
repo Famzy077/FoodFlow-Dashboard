@@ -86,10 +86,10 @@
 //     }
 //   }, [newInventory]);
 //   useEffect(() => {
-//     console.log("Fetched data object:", data); // Log entire data
+//     //console.log("Fetched data object:", data); // Log entire data
 //     if (data) {
 //       // setItemId(data.data._id);
-//       console.log("Item ID:");
+//       //console.log("Item ID:");
 //     }
 //   }, [data]);
 
@@ -116,14 +116,14 @@
 
 //         const data = await response.json();
 //         const newData = data.data;
-//         console.log("Fetched data:", data);
+//         //console.log("Fetched data:", data);
 
 //         if (newData && Array.isArray(newData)) {
 //           setEventData(newData);
 //           // setEventCount(newData.length);
 //           setFilteredData(newData);
 //           newData.forEach((item) => {
-//             console.log("Item ID:", item._id);
+//             //console.log("Item ID:", item._id);
 //           });
 //         } else {
 //           console.error("Unexpected data format");
@@ -140,7 +140,7 @@
 
 //   useEffect(() => {
 //     // if (details) {
-//     console.log(data, "Data");
+//     //console.log(data, "Data");
 
 //     // }
 //   });
@@ -480,13 +480,13 @@ export default function Page() {
 
         const data = await response.json();
         const newData = data.data;
-        console.log("Fetched data:", data);
+        //console.log("Fetched data:", data);
 
         if (newData && Array.isArray(newData)) {
           setEventData(newData);
           setFilteredData(newData);
           newData.forEach((item) => {
-            console.log("Item ID:", item._id);
+            //console.log("Item ID:", item._id);
           });
         } else {
           console.error("Unexpected data format");

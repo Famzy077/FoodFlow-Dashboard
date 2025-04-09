@@ -21,7 +21,7 @@ export default function ViewInventory({ data }) {
   const openModalForRow = (rowId) => {
     setSelectedRowId(rowId);
     const selectedItem = dataDetail.find((row) => row._id === rowId);
-    console.log("Selected item", selectedItem);
+    //console.log("Selected item", selectedItem);
     setCurrentItem(JSON.stringify(selectedItem));
     dispatch(setSelectedItem(selectedItem));
     setIsEdit(true);
@@ -30,7 +30,7 @@ export default function ViewInventory({ data }) {
   const handleDelete = (rowId) => {
     const newList = data.filter((row) => row._id !== rowId);
     setDataDetail(newList);
-    console.log("i am working");
+    //console.log("i am working");
   };
 
   useEffect(() => {
@@ -43,12 +43,12 @@ export default function ViewInventory({ data }) {
         const data = await InventoryService?.inventories();
 
         if (data.success) {
-          console.log("New d", data);
+          //console.log("New d", data);
           const successData = data.success;
-          console.log(successData, "Success data");
+          //console.log(successData, "Success data");
           setDataDetail(successData);
         } else {
-          console.log("Error fetching data");
+          //console.log("Error fetching data");
         }
       }
     }

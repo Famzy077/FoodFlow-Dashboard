@@ -28,8 +28,8 @@ export default function ProcurementReport(props) {
 
   let pDate = selectedItem ? new Date(selectedItem.createdAt) : "";
   pDate = selectedItem.createdAt;
-  console.log("P date", pDate);
-  console.log("Selected item", selectedItem);
+  //console.log("P date", pDate);
+  //console.log("Selected item", selectedItem);
   // view update modal
   const handleUpdateModalOpen = () => {
     dispatch(openModal());

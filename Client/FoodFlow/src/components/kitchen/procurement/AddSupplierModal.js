@@ -52,7 +52,7 @@ export default function AddSupplierModal({
 
   const handleSupplierSubmit = (e) => {
     e.preventDefault();
-    console.log(supplierForm);
+    //console.log(supplierForm);
     supplierReport.push(supplierForm);
     handleSupplierClose();
   };

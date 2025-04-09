@@ -90,7 +90,7 @@ export default function AddMenuModal({ handleCloseModal }) {
   };
 
   const handleSubmit = async (e) => {
-    console.log("Submitting form with values:", values);
+    //console.log("Submitting form with values:", values);
 
     e.preventDefault();
     setErrorMessage(
@@ -110,10 +110,10 @@ export default function AddMenuModal({ handleCloseModal }) {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUGxKvBa-AO7QPSClGlKkhqFMZcEea1pq5kpG4poOsAK9p6ZikmnI2BtJt79jgncNWGYQ&usqp=CAU",
     };
 
-    console.log("New data", newData);
+    //console.log("New data", newData);
 
     const newMenu = await MenuService.createMenu(newData);
-    console.log("API Response:", newMenu);
+    //console.log("API Response:", newMenu);
 
     if (newMenu.success) {
       setLoading(false);
@@ -129,10 +129,10 @@ export default function AddMenuModal({ handleCloseModal }) {
 
       handleCloseModal();
       dispatch(closeModal());
-      console.log(newMenu);
+      //console.log(newMenu);
     } else if (newMenu.error) {
       setLoading(false);
-      console.log("Error creating menu item:", newMenu.error);
+      //console.log("Error creating menu item:", newMenu.error);
 
       setErrorMessage(
         JSON.stringify({

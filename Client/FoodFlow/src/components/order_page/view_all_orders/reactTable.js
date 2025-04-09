@@ -161,7 +161,7 @@ export default function ReactTable() {
 
         const data = await response.json();
         const newData = data.data;
-        console.log("Fetched order data:", data);
+        //console.log("Fetched order data:", data);
 
         if (newData && Array.isArray(newData)) {
           setEventData(newData);

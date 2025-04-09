@@ -9,7 +9,7 @@ export default function page() {
   const {inventory_successDetails } = useSharedContext()
 
   useEffect(() => {
-    console.log(inventory_successDetails)
+    //console.logogogog(inventory_successDetails)
   }, []);
 
   if (!inventory_successDetails) return <div className="h-screen p-2">No new product added</div>;

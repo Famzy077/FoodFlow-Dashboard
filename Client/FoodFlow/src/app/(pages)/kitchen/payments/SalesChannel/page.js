@@ -16,7 +16,7 @@ export default function Page() {
   const limitAlerts = inventoryData.filter(
     (row) => row.quantityalert === "alerted"
   );
-  // console.log(pendingProcurements);
+  // //console.log(pendingProcurements);
 
 
   return (

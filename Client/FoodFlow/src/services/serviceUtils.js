@@ -7,9 +7,9 @@ import RefreshAccessToken from "./RefreshAccessToken";
 
 // if (typeof window !== "undefined") {
 //   token = window.localStorage.getItem("auth_token");
-//   console.log("we are running on the client");
+//   //console.log("we are running on the client");
 // } else {
-//   console.log("we are running on the server");
+//   //console.log("we are running on the server");
 // }
 
 const apiUrls = {
@@ -34,19 +34,19 @@ const proccessReq = async (targetUrl, method, body = null) => {
     } else if (method === "PATCH") {
       res = await handleRequest.patchRequest();
     }
-    console.log(res.data)
+    //console.log(res.data)
     return res.data;
   } catch (error) {
-    console.log("Error:", error);
+    //console.log("Error:", error);
 
     const errorFormat = {
       data: error.response?.data,
       status: error.response?.status,
     };
-    console.log("E response", errorFormat);
+    //console.log("E response", errorFormat);
 
     if (errorFormat.status === 401) {
-      console.log("Refresh Token Logic");
+      //console.log("Refresh Token Logic");
       await RefreshAccessToken();
     }
 

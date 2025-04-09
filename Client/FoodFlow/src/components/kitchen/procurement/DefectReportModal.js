@@ -35,7 +35,7 @@ export default function DefectReportModal({ handleCloseDefectModal }) {
     if (defectForm.title) {
       defectReportData.push(defectForm);
     }
-    console.log(defectForm);
+    //console.log(defectForm);
     handleClose();
   };
 

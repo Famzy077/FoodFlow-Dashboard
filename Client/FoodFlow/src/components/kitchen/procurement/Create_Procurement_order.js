@@ -70,8 +70,8 @@ export default function CreateProcurementOrder({
     });
   };
 
-  console.log(formB);
-  console.log(selectedCategory);
+  //console.log(formB);
+  //console.log(selectedCategory);
 
   const {
     mutate: newMutate,
@@ -81,14 +81,14 @@ export default function CreateProcurementOrder({
     mutationKey: "create-new-procurement",
     mutationFn: ProcurementService.createProcurement,
     onSuccess: (data) => {
-      console.log(data);
+      //console.log(data);
       toast.success("Procurement created successfully");
       router.push("/kitchen/procurement/procurement_view_inventory");
       handleClose();
     },
     onError: (error) => {
       toast.error(error.response.data.message);
-      console.log(error.response.data.message);
+      //console.log(error.response.data.message);
     },
   });
 
@@ -100,14 +100,14 @@ export default function CreateProcurementOrder({
     mutationKey: "create-new-procurement-by-id",
     mutationFn: ProcurementService.createProcurementById,
     onSuccess: (data) => {
-      console.log(data);
+      //console.log(data);
       router.push("/kitchen/procurement/procurement_view_inventory");
       toast.success("Procurement created successfully");
       handleClose();
     },
     onError: (error) => {
       toast.error(error.response.data.message);
-      console.log(error.response.data.message);
+      //console.log(error.response.data.message);
     },
   });
 
@@ -123,7 +123,7 @@ export default function CreateProcurementOrder({
       recipient_email: recipientEmail,
     };
 
-    // console.log(reqBody);
+    // //console.log(reqBody);
     if (type == "New") {
       newMutate(reqBody);
     } else {

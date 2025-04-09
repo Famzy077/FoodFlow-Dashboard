@@ -9,7 +9,7 @@ export default function Editform({ isVisible, onClose, data }) {
 
   const router = useRouter();
 
-  console.log("Is visible", isVisible);
+  //console.log("Is visible", isVisible);
   const [details, setDetails] = useState({
     name: data.name,
     categories: data.category,
@@ -38,7 +38,7 @@ export default function Editform({ isVisible, onClose, data }) {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log(e);
+    //console.log(e);
     setDetails((prev) => ({
       ...prev,
       [name]: value,
@@ -54,7 +54,7 @@ export default function Editform({ isVisible, onClose, data }) {
     //   })
     // );
     setLoading(true);
-    console.log(details);
+    //console.log(details);
     const newData = {
       // name: details.name,
       category: details.category,
@@ -71,7 +71,7 @@ export default function Editform({ isVisible, onClose, data }) {
 
     if (newInventory.success) {
       setLoading(false);
-      console.log(newInventory);
+      //console.log(newInventory);
       setErrorMessage(
         JSON.stringify({
           error: false,
@@ -80,7 +80,7 @@ export default function Editform({ isVisible, onClose, data }) {
       );
     } else if (newInventory.error) {
       setLoading(false);
-      console.log("Error", newInventory.error);
+      //console.log("Error", newInventory.error);
       setErrorMessage(
         JSON.stringify({
           error: true,
@@ -92,7 +92,7 @@ export default function Editform({ isVisible, onClose, data }) {
     }
   };
 
-  console.log("D", data);
+  //console.log("D", data);
   return (
     <div className="absolute inset-0 bg-black bg-opacity-25">
       <div className="absolute bg-white left-[23%] top-[18%] flex flex-col rounded-lg space-y-7 px-5 py-6">

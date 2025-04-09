@@ -23,7 +23,7 @@ const useFetchData = () => {
 
   // useEffect(() => {
   //   if (user && token) {
-  //     console.log(token, "this is the token");
+  //     //console.log(token, "this is the token");
   //     const fetchData = async () => {
   //       setLoading(true);
   //       try {

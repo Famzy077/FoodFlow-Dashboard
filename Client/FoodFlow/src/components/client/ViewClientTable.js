@@ -16,7 +16,7 @@ export default function ViewClient({ data }) {
   const modalRef = useRef(null);
 
   const openModalForRow = (rowId) => {
-    console.log("Row ID clicked:", rowId); // Debugging
+    //console.log("Row ID clicked:", rowId); // Debugging
     setSelectedRowId(rowId); // Set the selected row ID
     const selectedItem = data.find((row) => row.id === rowId); // Find the selected item
     dispatch(setSelectedItem(selectedItem)); // Dispatch the selected item to Redux (if needed)
@@ -26,7 +26,7 @@ export default function ViewClient({ data }) {
   const handleDelete = (rowId) => {
     const newList = data.filter((row) => row.id !== rowId);
     setDataDetail(newList);
-    console.log("Item deleted:", rowId); // Debugging
+    //console.log("Item deleted:", rowId); // Debugging
   };
 
   const closeModal = () => {

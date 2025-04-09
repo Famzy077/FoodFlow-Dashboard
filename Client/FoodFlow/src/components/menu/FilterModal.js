@@ -9,7 +9,7 @@ export default function FilterModal({ handleCloseModalFilter }) {
   const [toDate, setToDate] = useState("");
 
   const handleFilterClose = () => {
-    // console.log("closing modal: " + handleOpenModalFilter);
+    // //console.log("closing modal: " + handleOpenModalFilter);
     dispatch(closeModal());
     handleCloseModalFilter();
   };

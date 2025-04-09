@@ -15,17 +15,17 @@ export default function Checkout({ title, path }) {
   const discountObj = useSelector((state) => state.discount.value);
   let discount = discountObj.discountValue;
 
-  console.log("dd", discount);
+  //console.log("dd", discount);
 
   const cartItems = useSelector((store) => store.cart.cartItems) || [];
-  // console.log(cartItems);
+  // //console.log(cartItems);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     // dispatch(initializeCartFromCookies());
     setLoading(false);
-    console.log("Discount", discountObj);
+    //console.log("Discount", discountObj);
   }, [dispatch]);
 
   if (loading) {
@@ -43,7 +43,7 @@ export default function Checkout({ title, path }) {
   );
 
   if (discountObj.discountType === "percentage") {
-    console.log("Perce", discountObj);
+    //console.log("Perce", discountObj);
     discount = subtotal * (discount / 100);
   }
 

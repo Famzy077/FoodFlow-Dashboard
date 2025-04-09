@@ -41,7 +41,7 @@
 
 //   const handleRouting = (values) => {
 //     if (typeof window !== "undefined") {
-//       console.log(values);
+//       //////console.logog(values);
 //       mutate(values);
 //     }
 //   };
@@ -203,7 +203,7 @@ export default function Page() {
   // }, [data]);
 
   const handleRouting = (values) => {
-    console.log(values);
+    //////console.logog(values);
     mutate(values);
   };
 

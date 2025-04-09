@@ -12,7 +12,7 @@ const discountSlice = createSlice({
   initialState,
   reducers: {
     setValue: (state, action) => {
-      console.log("Action", action.payload);
+      //console.log("Action", action.payload);
       state.value = action.payload;
     },
     resetValue: (state, action) => {

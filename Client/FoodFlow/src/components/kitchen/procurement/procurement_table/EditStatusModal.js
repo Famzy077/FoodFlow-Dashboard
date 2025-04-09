@@ -18,7 +18,7 @@ export default function EditStatusModal({
     }, 1000);
   };
   const handleConfirm = () => {
-    console.log(`Updated status: ${newStatus}`);
+    //console.log(`Updated status: ${newStatus}`);
     updateStatus(newStatus);
     handleCloseEditStatusModal();
   };

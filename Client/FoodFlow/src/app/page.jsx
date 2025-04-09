@@ -10,7 +10,7 @@
 //     if (typeof window !== 'undefined') {
 //       // Corrected: Use localStorage.getItem instead of localStorage.getitemId
 //       const token = localStorage.getItem('auth_token');
-//       console.log('Retrieved Token:', token);
+//       //console.log('Retrieved Token:', token);
 //       if (token) {
 //         router.push('/dashboard');
 //       } else {
@@ -39,7 +39,7 @@ export default function Home() {
     setIsClient(true); // Ensures this code only runs on the client
     if (typeof window !== 'undefined') {
       const token = localStorage.getItem('auth_token');
-      console.log('Retrieved Token:', token);
+      ////////////console.logogogogogogogogogogog('Retrieved Token:', token);
       if (token) {
         router.push('/dashboard');
       } else {

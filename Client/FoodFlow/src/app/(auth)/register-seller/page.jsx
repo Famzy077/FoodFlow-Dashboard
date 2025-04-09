@@ -39,7 +39,7 @@ export default function page() {
     },
     onError: (error) => {
       toast.error(error.response.data.message);
-      console.log(error.response.data.message);
+      //console.logog(error.response.data.message);
     },
   });
 

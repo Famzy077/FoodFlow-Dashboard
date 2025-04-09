@@ -30,7 +30,7 @@ export default function Form() {
   };
 
   const handleDiscountChange = (e) => {
-    console.log("N", e.target.value);
+    ////console.log("N", e.target.value);
     dispatch(
       setValue({
         discountType,
@@ -96,7 +96,7 @@ export default function Form() {
                 className="border border-secondary w-[100%] p-1 rounded-md"
                 value={formData.name}
                 onChange={(e) => {
-                  // console.log(e.target);
+                  // ////console.log(e.target);
                   handleFieldChange("name", e.target.value);
                 }}
               />

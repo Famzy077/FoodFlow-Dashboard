@@ -17,7 +17,7 @@ export default function ViewProcurement() {
   const pendingProcurements = procurementTable.filter(
     (item) => item.status === "pending"
   );
-  // console.log(pendingProcurements);
+  // ////console.log(pendingProcurements);
 
   const deliveredProcurements = procurementTable.filter(
     (item) => item.status === "delivered"
@@ -35,7 +35,7 @@ export default function ViewProcurement() {
       return null;
     }
 
-    console.log("Running", token);
+    //console.log("Running", token);
 
     try {
       const response = await fetch(
@@ -68,7 +68,7 @@ export default function ViewProcurement() {
 
   useEffect(() => {
     if (data) {
-      console.log("Procurement data", data);
+      //console.log("Procurement data", data);
     }
   }, [data]);
 

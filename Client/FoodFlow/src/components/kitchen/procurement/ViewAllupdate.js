@@ -19,7 +19,7 @@ export default function ViewAllupdate({
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    console.log("E", e.target[0].value);
+    //console.log("E", e.target[0].value);
 
     commentsData.push({
       name: "John",

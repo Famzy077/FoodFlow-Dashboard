@@ -202,7 +202,7 @@ export default function Page() {
 
   useEffect(() => {
     if (id) {
-      console.log("ID from the route:", id);
+      //console.log("ID from the route:", id);
     }
   }, [id]);
 
@@ -229,11 +229,11 @@ export default function Page() {
 
         const data = await response.json();
         const newData = data.data;
-        console.log("Fetched data:", data);
+        //console.log("Fetched data:", data);
 
         if (newData) {
           setEventData(newData);
-          console.log(eventData, "Event data");
+          //console.log(eventData, "Event data");
         } else {
           console.error("Unexpected data format");
         }

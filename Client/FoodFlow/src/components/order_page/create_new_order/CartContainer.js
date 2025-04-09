@@ -81,7 +81,7 @@
 //       ) : (
 //         <>
 //           {cartItems.map((item, itemKey) => {
-//             // console.log(item);
+//             ////console.log(item);
 //             return (
 //               <div
 //                 key={itemKey}

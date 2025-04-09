@@ -18,7 +18,7 @@ export default function page() {
   });
 
   const onSubmit = (values) => {
-    console.log(values);
+    //console.log(values);
   };
   return (
     <Formik initialValues={menuData} onSubmit={onSubmit}>

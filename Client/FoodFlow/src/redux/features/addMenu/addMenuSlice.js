@@ -50,15 +50,15 @@ const addMenuSlice = createSlice({
       const { _id } = action.payload;
     
       // Log the id and state for debugging
-      console.log("Deleting item with _id:", _id);
-      console.log("Current state before deletion:", state);
+      //console.log("Deleting item with _id:", _id);
+      //console.log("Current state before deletion:", state);
     
       // Filter out the item with the matching id
       // const updatedState = state.filter((item) => item._id !== id);
       const updatedState = state.filter((item) => String(item._id) !== String(_id));
     
       // Log the updated state for debugging
-      console.log("Updated state after deletion:", updatedState);
+      //console.log("Updated state after deletion:", updatedState);
     
       try {
         if (updatedState.length === 0) {

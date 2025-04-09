@@ -8,11 +8,11 @@ const apiClient = axios.create({
 
 apiClient.interceptors.response.use(
 (response) =>{
-  console.log('success :', response.data)
+  ////console.log('success :', response.data)
   return response
 },
   (error) => {
-   console.log('error:', error)
+   //console.log('error:', error)
    if(error.message === 'Network Error') return toast.error('Check internet connection')
     if (error.response) return toast.error(error.response.data.message)
     return Promise.reject(error);
@@ -43,7 +43,7 @@ apiClient2.interceptors.response.use((response) => response,
       try {
         const refreshToken = localStorage.getItem('refresh_token');
         if (!refreshToken) {
-          console.log("No refresh token available");
+          //console.log("No refresh token available");
           // redirect to login
           window.location.href="/login"
           return Promise.reject(error);
@@ -54,7 +54,7 @@ apiClient2.interceptors.response.use((response) => response,
 
         return apiClient2(originalRequest);
       } catch (error) {
-        console.log("Failed to refresh token", error);
+        //console.log("Failed to refresh token", error);
         window.location.href='/login'
         return Promise.reject(error);
       }

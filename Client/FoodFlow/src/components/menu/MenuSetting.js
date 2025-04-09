@@ -15,7 +15,7 @@ export default function MenuSetting() {
   const addMenuItems = useSelector((store) => store.addMenu);
 
   // Log the addMenuItems data for debugging
-  console.log("addMenuItems:", addMenuItems);
+  //console.log("addMenuItems:", addMenuItems);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);

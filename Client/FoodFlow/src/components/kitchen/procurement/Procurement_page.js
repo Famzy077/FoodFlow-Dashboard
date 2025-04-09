@@ -53,11 +53,11 @@ export default function Procurement_page() {
     queryKey: ["Procurements"],
     queryFn: getAllProcurements,
     onSuccess: (data) => {
-      console.log(data);
+      ////////console.logogogog(data);
     },
     onError: (error) => {
       toast.error(error.response.data.message);
-      console.log(error.response.data.message);
+      ////console.log(error.response.data.message);
     },
   });
 
