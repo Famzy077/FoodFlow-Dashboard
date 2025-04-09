@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "/public/images/brand_logo/logo1.png";
+import BrandLogo from "/public/images/brand_logo/logo.png";
 import chat from "/public/images/icons/chat.svg";
 import gift from "/public/images/icons/gift.svg";
 import Notification from "../topbar/Notification";
@@ -38,8 +38,8 @@ export default function Topbar({ data }) {
     <div className="h-[10%] flex justify-between mx-20 items-center">
       <div className="my-2">
         <Image
-          src={logo}
-          alt="dinerPro_logo"
+          src={BrandLogo}
+          alt="diner-proo Logo"
           style={{ objectFit: "cover" }}
           width={100}
           height={100}

@@ -1,0 +1,18 @@
+{
+  "profilePic": {
+    "id": 1,
+    "imageUrl": "/images/jollof-rice-recipe-23.jpg"
+  },
+  "menuItems": [
+    {
+      "id": 1,
+      "name": "Pizza",
+      "price": 9.99
+    },
+    {
+      "id": 2,
+      "name": "Burger",
+      "price": 5.99
+    }
+  ]
+}

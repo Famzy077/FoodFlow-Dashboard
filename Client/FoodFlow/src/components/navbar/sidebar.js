@@ -15,6 +15,7 @@ import { TbCurrencyNaira } from "react-icons/tb";
 import { RiContactsLine} from "react-icons/ri";
 import { usePathname, useRouter } from "next/navigation";
 import { MenuIcon } from "lucide-react";
+import './side.css'
 
 const Sidebar = () => {
   const router = useRouter()
@@ -59,7 +60,7 @@ const Sidebar = () => {
                 : "hover:bg-white hover:rounded-tl-[30px] hover:duration-300"
             }`}
           >
-            <AiOutlineDashboard />
+            <AiOutlineDashboard /> 
             Dashboard
           </li>
         </Link>
@@ -68,10 +69,10 @@ const Sidebar = () => {
           <div className="text-gray cursor-pointer mt-2 font-bold">
             <button
               onClick={toggleDropdownOne}
-              className="flex gap-x-4 items-center hover:bg-white hover:rounded-tl-[30px] p-5 w-full hover:duration-300"
+              className="flex gap-x-4 items-center order hover:bg-white hover:rounded-tl-[30px] p-5 w-full hover:duration-300"
             >
               <TfiWrite />
-              <h1>Order</h1>
+              <h1 className="text-white hover:text-gray orderText">Order</h1>
               <BsChevronDown
                 className={
                   isDropdownOne ? "rotate-180 duration-300" : "duration-300"
@@ -94,7 +95,7 @@ const Sidebar = () => {
                     }`}
                   >
                     <MdOutlineCreate />
-                    <span>Create New Order</span>
+                    <span className="text-white hover:text-gray">Create New Order</span>
                   </li>
                 </Link>
                 <Link
@@ -111,7 +112,7 @@ const Sidebar = () => {
                     }`}
                   >
                     <GiKnifeFork />
-                    <span>View all Orders</span>
+                    <span className="text-white hover:text-gray">View all Orders</span>
                   </li>
                 </Link>
               </ul>
@@ -122,10 +123,10 @@ const Sidebar = () => {
           <div className="text-gray cursor-pointer  mt-2  font-bold">
             <button
               onClick={toggleDropdownTwo}
-              className="flex gap-x-4 items-center hover:bg-white hover:rounded-tl-[30px] p-5 w-full hover:duration-300"
+              className="flex gap-x-4 items-center text-white hover:text-gray hover:bg-white hover:rounded-tl-[30px] p-5 w-full hover:duration-300"
             >
               <BsListColumnsReverse />
-              Product Center
+                Product Center
               <BsChevronDown
                 className={
                   isDropdownTwo ? "rotate-180 duration-300" : "duration-300"
@@ -149,7 +150,7 @@ const Sidebar = () => {
                     }`}
                   >
                     <MdOutlineInventory />
-                    <span>Inventory</span>
+                    <span className="text-white hover:text-gray">Inventory</span>
                   </li>
                 </Link>
                 <Link
@@ -166,7 +167,7 @@ const Sidebar = () => {
                     }`}
                   >
                     <BsBag />
-                    <span>Procurement</span>
+                    <span className="text-white hover:text-gray">Procurement</span>
                   </li>
                 </Link>
                 <Link
@@ -181,7 +182,7 @@ const Sidebar = () => {
                     }`}
                   >
                     <TbCurrencyNaira />
-                    <span>Payments</span>
+                    <span className="text-white hover:text-gray">Payments</span>
                   </li>
                 </Link>
                 <Link
@@ -196,7 +197,7 @@ const Sidebar = () => {
                     }`}
                   >
                     <RiContactsLine />
-                    <span>Client</span>
+                    <span className="text-white hover:text-gray">Client</span>
                   </li>
                 </Link>
               </ul>
@@ -209,10 +210,10 @@ const Sidebar = () => {
           <div className="text-gray cursor-pointer  mt-2  font-bold">
             <button
               onClick={toggleDropdownThree}
-              className="flex gap-x-4 items-center hover:bg-white hover:rounded-tl-[30px] p-5 w-full hover:duration-300"
+              className="flex gap-x-4 items-center order hover:bg-white hover:rounded-tl-[30px] p-5 w-full hover:duration-300"
             >
               <AiOutlineStock />
-              <span>Back Office</span>
+              <span className="text-white orderText">Back Office</span>
               <BsChevronDown
                   className={
                     isDropdownThree ? "rotate-180 duration-300" : "duration-300"
@@ -234,7 +235,7 @@ const Sidebar = () => {
                           }`}
                         >
                           <MdOutlineInventory />
-                          <span>Schedule</span>
+                          <span className="text-white hover:text-gray">Schedule</span>
                         </li>
                       </Link>
                       <Link
@@ -249,7 +250,7 @@ const Sidebar = () => {
                           }`}
                         >
                           <MdOutlineInventory />
-                          <span>Vendor</span>
+                          <span className="text-white hover:text-gray">Vendor</span>
                         </li>
                       </Link>
                     </ul>
@@ -259,24 +260,24 @@ const Sidebar = () => {
 
                   
         <Link href="/settings/profile">
-          <li className="text-gray cursor-pointer gap-x-4 items-center flex p-5 hover:bg-white hover:rounded-tl-[30px] mt-2 hover:duration-300 font-bold">
+          <li className="order cursor-pointer gap-x-4 items-center flex p-5 hover:bg-white hover:rounded-tl-[30px] mt-2 hover:duration-300 font-bold">
             <AiOutlineSetting />
-            <span>Settings</span>
+            <span className="text-white orderText">Settings</span>
           </li>
         </Link>
 
         {/* help desk */}
         <Link href="/#">
-          <li className="text-gray cursor-pointer gap-x-4 items-center flex p-5 hover:bg-white hover:rounded-tl-[30px] mt-2 hover:duration-300 font-bold">
+          <li className="text-gray cursor-pointer order gap-x-4 items-center flex p-5 hover:bg-white hover:rounded-tl-[30px] mt-2 hover:duration-300 font-bold">
             <FiPhone />
-            <span>Help Desk</span>
+            <span className="text-white orderText">Help Desk</span>
           </li>
         </Link>
       </ul>
       <ul
       onClick={handleLogout}
-       className="w-full justify-self-end">
-        <li className="text-gray cursor-pointer gap-x-4 items-center flex p-5 hover:bg-white hover:rounded-tl-[30px] mt-2 hover:duration-300 font-bold">Sign Out</li>
+       className="w-full justify-self-end order">
+        <li className="text-white orderText cursor-pointer gap-x-4 items-center flex p-5 hover:bg-white hover:rounded-tl-[30px] mt-2 hover:duration-300 font-bold">Log Out</li>
       </ul>
     </nav>
   );

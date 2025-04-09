@@ -24,7 +24,7 @@ export default function DisplayTotals() {
               >
                 <CircularDisplay
                 border=""
-                bg='bg-[#FFA90236]'
+                bg='bg-blue-200'
                 content={total.icon}/>
 
                 <div className="flex flex-col gap-2">
