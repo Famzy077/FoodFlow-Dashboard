@@ -33,8 +33,8 @@ export default function RecentOrderRequest() {
               return(
                 <div
                  key={i}
-                  className="w-full border border-zinc-300 h-14 rounded-md flex items-center justify-between px-4 py-1 text-xs">
-                    <div className="flex items-center gap-4 w-1/2">
+                  className="w-full border border-zinc-300 h-fit rounded-md flex gap-2 items-center md:justify-between px-4 py-1 text-xs">
+                    <div className="flex items-center gap-4 w-fit">
                       {/* for image */}
                       <div className=" w-[40px] h-[40px] rounded-full border"></div>
                       <div className="flex flex-col ">
@@ -44,26 +44,26 @@ export default function RecentOrderRequest() {
                       </div>
                     </div>
 
-                    <div className="w-1/2 flex justify-between items-center">
+                    <div className="w-fit flex justify-between items-center">
                       <div className="flex flex-col ">
                         <span>Tayo peters</span>
-                        <span className="text-[0.6rem] text-wrap text-[#4F4F4F]">no 14, akpu street, enugu</span>
+                        <span className="text-[0.6rem] text- text-[#4F4F4F]">no 14, akpu street</span>
                       </div>
 
                       <div className="flex gap-4 items-center">
                           <div>#2200</div>
                           <div>x3</div>
                           <SquareDisplay
-                          color="text-primary"
-                          border="border border-primary"
-                          bg="bg-[#FFA9024F]"
+                          color="text-white"
+                          border="border border-blue-800"
+                          bg="bg-[#52A9EA]"
                           size="w-[100px] h-[30px]"
                           content={<span>Pending</span>}
                           />
                           <OrderRequestAction/>
                       </div>
                     </div>
-            </div>
+                </div>
               )
             })}
             <div className="flex items-center gap-1 text-primary mx-auto text-sm"><span className="underline">view more</span> <MdKeyboardArrowDown className="mt-1" size={20}/></div>

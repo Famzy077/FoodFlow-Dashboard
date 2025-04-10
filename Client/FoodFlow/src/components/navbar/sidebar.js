@@ -123,10 +123,10 @@ const Sidebar = () => {
           <div className="text-gray cursor-pointer  mt-2  font-bold">
             <button
               onClick={toggleDropdownTwo}
-              className="flex gap-x-4 items-center text-white hover:text-gray hover:bg-white hover:rounded-tl-[30px] p-5 w-full hover:duration-300"
+              className="flex gap-x-4 items-center order hover:bg-white hover:rounded-tl-[30px] p-5 w-full hover:duration-300"
             >
               <BsListColumnsReverse />
-                Product Center
+              <span className="text-white orderText">Product Center</span>
               <BsChevronDown
                 className={
                   isDropdownTwo ? "rotate-180 duration-300" : "duration-300"

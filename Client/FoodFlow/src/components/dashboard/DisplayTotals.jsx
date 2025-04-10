@@ -20,7 +20,7 @@ export default function DisplayTotals() {
           return(
             <div
               key={i}
-              className="w-1/4 h-[100px] shadow-lg rounded-md p-2 flex gap-2"
+              className="w-1/4 h-[100px] shadow-lg border-t border-zinc-200 rounded-md p-2 flex gap-2"
               >
                 <CircularDisplay
                 border=""
