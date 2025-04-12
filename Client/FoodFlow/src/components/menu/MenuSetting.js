@@ -154,7 +154,7 @@ export default function MenuSetting() {
           <span className="text-sm">Add Menu</span>
         </button>
       </div>
-      <div className={`grid z-10 grid-cols-4 gap-4 mb-1 w-[90%]`}>
+      <div className={`grid z-10 menuCard gap-4 mb-1 w-[90%]`}>
         {menuList}
       </div>
       <div className="flex justify-between px-2 mt-4">

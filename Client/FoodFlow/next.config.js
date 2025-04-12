@@ -26,6 +26,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: '*.net', // If images come from this domain
       },
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn0.gstatic.com'
+      },
     ],
   },
   productionBrowserSourceMaps: false,

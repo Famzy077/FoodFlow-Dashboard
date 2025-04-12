@@ -20,6 +20,10 @@ export default function Card({ food }) {
   // Toggle like status
   const toggleLike = () => {
     setLiked((prev) => !prev); // Toggle liked state
+    localStorage.setItem(
+      `likedFood_${food.id}`,
+      JSON.stringify(!liked) // Store the new liked status in local storage
+    );
   };
 
   const image = 'https://feelgoodfoodie.net/wp-content/uploads/2020/07/Jollof-Rice-4.jpg';

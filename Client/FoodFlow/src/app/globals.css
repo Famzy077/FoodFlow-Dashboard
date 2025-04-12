@@ -20,6 +20,10 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.menuCard{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 .dashBoardCards{
   display: flex;
   gap: 1rem;
@@ -37,6 +41,11 @@
 }
 
 @media screen and (max-width : 640px) {
+  *{
+    contain: none !important;
+  }
+}
+@media screen and (max-width : 640px) and (min-width : 700px) {
   *{
     contain: none !important;
   }
